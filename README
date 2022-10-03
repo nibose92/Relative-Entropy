@@ -1,8 +1,8 @@
-Two codes are listed here:
+Included are example multiple sequence alignment FASTA files used for Relative Entropy computations and two scripts, which are described as follows:
 
 1) RelativeEntropy.py
 
-This script will determine the relative entropy at each position of the multiple sequence by comparing the frequency of a residue in a strain vs. the frequency of that residue in the entire population. The multiple sequence alignment includes sequences of all allelic copies of the gene per strain. Allelic copies from the same strain are represented by the same accession number in the FASTA header, followed by ":" delimiter and an allele-specific designation. In the example multiple sequence alignments used in our study, this allele-specific designation is the allele locus in the strain genome.
+This script determines the relative entropy at each position of the multiple sequence alignment by comparing the frequency of a residue in a strain vs. the frequency of that residue in the entire population. The multiple sequence alignment includes sequences of all allelic copies of the gene per strain. Allelic copies from the same strain are represented by the same accession number in the FASTA header, followed by ":" delimiter and an allele-specific designation. In the example multiple sequence alignments used in our study, this allele-specific designation is the allele locus in the strain genome.
 
 
 Usage with bash: $python RelativeEntropy.py -in /path/to/multiple_sequence_alignment.fasta -pssm /path/to/PSSM.csv -entropy /path/to/Relative_Entropy.csv
