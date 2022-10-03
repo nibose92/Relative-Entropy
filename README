@@ -1,6 +1,6 @@
 Included are example multiple sequence alignment FASTA files used for Relative Entropy computations and two scripts, which are described as follows:
 
-1) RelativeEntropy.py
+A) RelativeEntropy.py
 
 This script determines the relative entropy at each position of the multiple sequence alignment by comparing the frequency of a residue in a strain vs. the frequency of that residue in the entire population. The multiple sequence alignment includes sequences of all allelic copies of the gene per strain. Allelic copies from the same strain are represented by the same accession number in the FASTA header, followed by ":" delimiter and an allele-specific designation. In the example multiple sequence alignments used in our study, this allele-specific designation is the allele locus in the strain genome.
 
@@ -28,7 +28,7 @@ Requirements for this script to function:
 
 
 
-2) RE_value_removal.py
+B) RE_value_removal.py
 
 This script will truncate a Relative entropy (RE) file for a large population set by removing accessions and their computed RE of a subpopulation that has already been evaluated. This script requires that relative entropy of the larger population (Reference) and the population to be removed (Subpopulation) are separately determined. For example, in the example set, to get the RE for non-coli Escherichia, we removed RE corresponding to E. coli (already computed) from the RE file corresponding to Escherichia.  
 
